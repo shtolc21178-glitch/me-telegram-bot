@@ -1,8 +1,9 @@
 import asyncio
 from aiogram import Bot, Dispatcher, types
 import yt_dlp
+import os
+TOKEN = os.getenv("TOKEN")  # беремо токен із Variables
 
-TOKEN = 8578104157:AAHBlssLvxnVn6uBOgJvfCNNBMx0v3IRRmM
 
 bot = Bot(token=TOKEN)
 dp = Dispatcher(bot)
